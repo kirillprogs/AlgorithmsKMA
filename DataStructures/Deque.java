@@ -5,9 +5,9 @@ import java.util.Iterator;
 
 public class Deque<T> implements Iterable<T> {
 
-    Node<T> head;
-    Node<T> tail;
-    int size;
+    private Node<T> head;
+    private Node<T> tail;
+    private int size;
 
     /* Implementation uses doubly-linked list.
     * Then all operations run in O(1) time. */
