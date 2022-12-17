@@ -17,6 +17,10 @@ public class Deque<T> implements Iterable<T> {
         Node(P element) { data = element; }
     }
 
+	public int size() {
+		return size;
+	}
+
     public void addFront(T element) {
         if (head == null) {
             head = new Node<>(element);

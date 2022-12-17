@@ -28,7 +28,7 @@ public class ArrayStack<T> implements Stack<T> {
         --capacity;
         data[capacity] = null;
         /* if less than quarter, half array */
-        if (capacity == data.length/4)
+        if (capacity == data.length/4 && capacity > 0)
             resize(data.length/2);
         return (T)result;
     }
